@@ -27,7 +27,7 @@ export const Input = ({ className = "", data, children }) => {
             } bo-input__input`}
             {...settings}
           />
-          {children}
+          {children && React.Children.toArray(children)[0]}
         </div>
         {errors[name] && (
           <p className="bo-input__error">
