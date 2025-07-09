@@ -1,0 +1,6 @@
+build
+.idea
+docker
+public
+node_modules
+.env
