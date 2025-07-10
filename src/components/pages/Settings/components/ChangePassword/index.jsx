@@ -75,9 +75,9 @@ const ChangePassword = () => {
               <Input
                 className=""
                 data={{
-                  label: `${__("settings.your_password")}:`,
+                  label: `${__("settings.your_password")}`,
                   type: isTypePassword.old_password ? "password" : "text",
-                  placeholder: `${__("common.enter_password")}:`,
+                  placeholder: `${__("common.enter_password")}`,
                   errors,
                   settings: {
                     ...register("old_password", {

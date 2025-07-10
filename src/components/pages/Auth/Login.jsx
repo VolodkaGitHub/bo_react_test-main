@@ -100,9 +100,9 @@ export const Login = () => {
         <Input
           className={"auth.js-form__inp-wrap"}
           data={{
-            label: `${__("common.email")}:`,
+            label: `${__("common.email")}`,
             type: "email",
-            placeholder: `${__("common.enter_email")}:`,
+            placeholder: `${__("common.enter_email")}`,
             errors,
             error,
             settings: {
@@ -119,9 +119,9 @@ export const Login = () => {
         <Input
           className={"auth.js-form__inp-wrap"}
           data={{
-            label: `${__("common.password")}:`,
+            label: `${__("common.password")}`,
             type: isTypePassword ? "password" : "text",
-            placeholder: `${__("common.enter_password")}:`,
+            placeholder: `${__("common.enter_password")}`,
             errors,
             error,
             settings: {

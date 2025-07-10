@@ -84,7 +84,7 @@ export const SignUp = () => {
           <Input
             className={"auth.js-form__inp-wrap"}
             data={{
-              label: `${__("common.email")}:`,
+              label: `${__("common.email")}`,
               type: "email",
               errors,
               settings: {
@@ -102,7 +102,7 @@ export const SignUp = () => {
           <Input
             className={"auth.js-form__inp-wrap"}
             data={{
-              label: `${__("common.password")}:`,
+              label: `${__("common.password")}`,
               type: isTypePassword ? "password" : "text",
               errors,
               settings: {
@@ -127,19 +127,6 @@ export const SignUp = () => {
         </div>
 
         <PasswordRequirements password={password} />
-
-        <p className="auth-form__text">
-          {__("auth.have_acc")}&nbsp;
-          <Link
-            to={""}
-            onClick={() => {
-              handleSignUpToggle(false);
-              handleLoginToggle(true);
-            }}
-          >
-            {__("auth.sign_in")}
-          </Link>
-        </p>
 
         <ul className="auth-form__list-agree list-agree">
           <li className="list-agree__item">
@@ -199,6 +186,19 @@ export const SignUp = () => {
           <img src={GoogleIcon} alt="" />
            {__("auth.create_with_google")}
         </Button>
+        <div className="change-option__container">
+          <p className="change-option__text">{__("auth.ask_login")}
+            <Link
+              to=""
+              onClick={() => {
+                handleSignUpToggle(false);
+                handleLoginToggle(true);
+              }}
+              className="change-option__href">
+                {__("auth.create_login")}
+            </Link>
+          </p>
+        </div>
       </form>
       <Popup active={modalActive} setActive={setModalActive}>
         <Check email={modalActive} />

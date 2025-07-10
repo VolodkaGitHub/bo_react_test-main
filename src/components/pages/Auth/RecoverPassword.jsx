@@ -57,7 +57,7 @@ export const RecoverPassword = () => {
         <Input
           className={"auth.js-form__inp-wrap"}
           data={{
-            label: `${__("common.email")}:`,
+            label: `${__("common.email")}`,
             type: "email",
             errors,
             error,

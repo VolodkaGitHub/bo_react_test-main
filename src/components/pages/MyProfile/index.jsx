@@ -133,9 +133,9 @@ export const MyProfile = () => {
               <Input
                 className="profile__inp-wrap"
                 data={{
-                  label: `${__("profile.full_name")}:`,
+                  label: `${__("profile.full_name")}`,
                   type: "text",
-                  placeholder: `${__("profile.full_name")}:`,
+                  placeholder: `${__("profile.full_name")}`,
                   errors,
                   settings: {
                     ...register("full_name", {
@@ -151,7 +151,7 @@ export const MyProfile = () => {
               <Input
                 className="profile__inp-wrap"
                 data={{
-                  label: `${__("profile.email")}:`,
+                  label: `${__("profile.email")}`,
                   type: "email",
                   placeholder: "qwerty@gmail.com",
                   errors,

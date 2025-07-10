@@ -108,7 +108,7 @@ const Login = () => {
         <Input
           className={"auth.js-form__inp-wrap"}
           data={{
-            label: `${__("common.email")}:`,
+            label: `${__("common.email")}`,
             type: "email",
             errors,
             error,
@@ -126,7 +126,7 @@ const Login = () => {
         <Input
           className={"auth.js-form__inp-wrap"}
           data={{
-            label: `${__("common.password")}:`,
+            label: `${__("common.password")}`,
             type: isTypePassword ? "password" : "text",
             errors,
             error,
@@ -210,6 +210,19 @@ const Login = () => {
           <img src={GoogleIcon} alt="" />
           {__("auth.create_with_google")}
         </Button>
+        <div className="change-option__container">
+          <p className="change-option__text">{__("auth.ask_sign_up")}
+            <Link 
+              to=""
+              onClick={() => {
+                handleLoginToggle(false);
+                handleSignUpToggle(true);
+              }}
+              className="change-option__href">
+                {__("auth.create_sign_up")}
+            </Link>
+          </p>
+        </div>
       </form>
     </>
   );

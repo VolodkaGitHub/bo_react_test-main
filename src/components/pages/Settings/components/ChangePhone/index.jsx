@@ -109,7 +109,7 @@ const ChangePhone = () => {
                 <Input
                   className={"auth.js-form__inp-wrap bo-input--icon"}
                   data={{
-                    label: `${__("settings.v_code")}:`,
+                    label: `${__("settings.v_code")}`,
                     type: "text",
                     placeholder: `${__("settings.v_code_enter")}`,
                     errors,

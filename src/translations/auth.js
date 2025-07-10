@@ -2,7 +2,7 @@ import config from "../config";
 
 export const auth = {
   uk: {
-    "auth.sign_up": "Реєстрація",
+    "auth.sign_up": "РЕЄСТРАЦІЯ",
     "auth.create_password": "Створіть новий пароль",
     "auth.create_with_google": "Створити через Google",
     "auth.create_password_text": "Будь ласка, оберіть новий пароль для акаунта",
@@ -40,9 +40,13 @@ export const auth = {
     "auth.check_in_box2_1": "На вашу електронну адресу було надіслано лист",
     "auth.check_in_box2_2":
       "Перейдіть за посиланням у листі, щоб підтвердити пошту.",
+    "auth.ask_sign_up": "Ще нема акаунта? ",
+    "auth.create_sign_up": "Створити",
+    "auth.ask_login": "Уже є акаунт? ",
+    "auth.create_login": "Увійти",
   },
   en: {
-    "auth.sign_up": "Sign up",
+    "auth.sign_up": "SIGN UP",
     "auth.create_password": "Create a new password",
     "auth.create_with_google": "Create with Google",
     "auth.create_password_text": "Please choose a new account password",
@@ -81,10 +85,14 @@ export const auth = {
     "auth.check_in_box2_1": "An email has been sent to",
     "auth.check_in_box2_2":
       "Follow the link in the email to confirm your email.",
+    "auth.ask_sign_up": "Don't have an account yet? ",
+    "auth.create_sign_up": "Create",
+    "auth.ask_login": "Already have an account? ",
+    "auth.create_login": "Log in"      
   },
 
   ru: {
-    "auth.sign_up": "Регистрация",
+    "auth.sign_up": "РЕГИСТРАЦИЯ",
     "auth.create_password": "Укажите пароль",
     "auth.create_with_google": "Создать через Google",
     "auth.create_password_text":
@@ -123,7 +131,11 @@ export const auth = {
     "auth.check_in_box2_1": "На ваш электронный адрес отправлено письмо",
     "auth.check_in_box2_2":
       "Перейдите по ссылке в письме, чтобы подтвердить свой адрес электронной почты.",
-  },
+    "auth.ask_sign_up": "Еще нет аккаунта? ",
+    "auth.create_sign_up": "Создать",
+    "auth.ask_login": "Уже есть аккаунт? ",
+    "auth.create_login": "Войти"      
+    },
 
   es: {
     "auth.sign_up": "Registrarse",

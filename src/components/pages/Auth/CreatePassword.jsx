@@ -74,9 +74,9 @@ export const CreatePassword = () => {
       <Input
         className="auth-form__inp-wrap"
         data={{
-          label: `${__("auth.new_password")}:`,
+          label: `${__("auth.new_password")}`,
           type: isTypePassword ? "password" : "text",
-          placeholder: `${__("auth.new_password")}:`,
+          placeholder: `${__("auth.new_password")}`,
           errors,
           settings: {
             ...register("new_password", {
@@ -101,9 +101,9 @@ export const CreatePassword = () => {
       <Input
         className="auth-form__inp-wrap"
         data={{
-          label: `${__("auth.confirm_password")}:`,
+          label: `${__("auth.confirm_password")}`,
           type: isTypeConfirmPassword ? "password" : "text",
-          placeholder: `${__("auth.confirm_password")}:`,
+          placeholder: `${__("auth.confirm_password")}`,
           errors,
           settings: {
             ...register("confirmPassword", {
