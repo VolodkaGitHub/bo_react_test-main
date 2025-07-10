@@ -12,7 +12,7 @@ export const auth = {
     "auth.enter_google_code": "Введіть код підтвердження Google",
     "auth.enter_sms_code": "Введіть SMS-код підтвердження",
     "auth.enter_email_code": "Введіть код з електронної пошти",
-    "auth.log_in": "Увійти",
+    "auth.log_in": "УВІЙТИ",
     "auth.first_time": "Вперше на Binify?",
     "auth.forgot_pass": "Забули пароль?",
     "auth.reset_pass_title": "Скидання пароля",
@@ -44,6 +44,9 @@ export const auth = {
     "auth.create_sign_up": "Створити",
     "auth.ask_login": "Уже є акаунт? ",
     "auth.create_login": "Увійти",
+    "auth.divider": "або",
+    "auth.log_in_form_title": "Увійти в свій Акаунт",
+    "auth.sign_up_form_title": "Створити свій акаунт"
   },
   en: {
     "auth.sign_up": "SIGN UP",
@@ -56,7 +59,7 @@ export const auth = {
     "auth.enter_google_code": "Enter Google verification code",
     "auth.enter_sms_code": "Enter SMS verification code",
     "auth.enter_email_code": "Enter Email code",
-    "auth.log_in": "Log in",
+    "auth.log_in": "LOG IN",
     "auth.first_time": `First time on ${config.default_title}?`,
     "auth.forgot_pass": "Forgot password?",
     "auth.reset_pass_title": "Password reset",
@@ -88,7 +91,10 @@ export const auth = {
     "auth.ask_sign_up": "Don't have an account yet? ",
     "auth.create_sign_up": "Create",
     "auth.ask_login": "Already have an account? ",
-    "auth.create_login": "Log in"      
+    "auth.create_login": "Log in",
+    "auth.divider": "or",
+    "auth.log_in_form_title": "Log In to your Account",
+    "auth.sign_up_form_title": "Create Your account"
   },
 
   ru: {
@@ -103,7 +109,7 @@ export const auth = {
     "auth.enter_google_code": "Введите код 2FA код с Вашего приложения, ",
     "auth.enter_sms_code": "Введите код с SMS",
     "auth.enter_email_code": "Введите код с e-mail",
-    "auth.log_in": "Войти",
+    "auth.log_in": "ВОЙТИ",
     "auth.first_time": `Впервые на ${config.default_title}?`,
     "auth.forgot_pass": "Забыли пароль?",
     "auth.reset_pass_title": "Восстановить пароль",
@@ -114,7 +120,7 @@ export const auth = {
     "auth.registration_completed_t": "Вы успешно создали учетную запись.",
     "auth.dashboard": "Войти в главное меню",
     "auth.create_acc": "Создать учетную запись",
-    "auth.sign_in": "Войти",
+    "auth.sign_in": "ВОЙТИ",
     "auth.have_acc": "У вас уже есть аккаунт?",
     "auth.requirements1": "Минимальная длина пароля – 8 символов.",
     "auth.requirements2": "Должен содержать как цифры, так и буквы.",
@@ -134,7 +140,10 @@ export const auth = {
     "auth.ask_sign_up": "Еще нет аккаунта? ",
     "auth.create_sign_up": "Создать",
     "auth.ask_login": "Уже есть аккаунт? ",
-    "auth.create_login": "Войти"      
+    "auth.create_login": "Войти",
+    "auth.divider": "или",
+    "auth.log_in_form_title": "Войти в свой Аккаунт",
+    "auth.sign_up_form_title": "Создать свой аккаунт"
     },
 
   es: {

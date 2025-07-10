@@ -71,31 +71,7 @@ export const Layout = ({ children }) => {
                 <img src={GreyCross} alt="" />
               </button>
             </div>
-            <div className="auth-container">
-              {(activeForm === "signup" || activeForm === "login") && (
-                <div className="toggle-container">
-                  <p
-                    onClick={() => handleLoginToggle(true)}
-                    className={`toggle-container__option ${
-                      activeForm === "login"
-                        ? "toggle-container__option--active"
-                        : ""
-                    }`}
-                  >
-                    {__("auth.log_in")}
-                  </p>
-                  <p
-                    onClick={() => handleSignUpToggle(true)}
-                    className={`toggle-container__option ${
-                      activeForm === "signup"
-                        ? "toggle-container__option--active"
-                        : ""
-                    }`}
-                  >
-                    {__("auth.sign_up")}
-                  </p>
-                </div>
-              )}
+            <div className="auth-container">             
               {
                 {
                   signup: <SignUp />,

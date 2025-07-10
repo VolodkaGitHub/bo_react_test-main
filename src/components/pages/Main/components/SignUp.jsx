@@ -80,6 +80,7 @@ export const SignUp = () => {
         </title>
       </Helmet>
       <form onSubmit={handleSubmit(onSubmit)} className="auth-form">
+        <h1 className="auth-heading">{__("auth.sign_up_form_title")}</h1>
         <div className="auth-form__inputs">
           <Input
             className={"auth.js-form__inp-wrap"}
@@ -179,10 +180,9 @@ export const SignUp = () => {
           {__("auth.sign_up")}
         </Button>
         <div class="divider">
-          <span>or</span>
+          <span>{__("auth.divider")}</span>
         </div>
         <Button color="dark-grey" size="middle" isLoading={loading}>
-          {/* {__("auth.log_in")} */}
           <img src={GoogleIcon} alt="" />
            {__("auth.create_with_google")}
         </Button>

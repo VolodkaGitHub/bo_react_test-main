@@ -1,6 +1,6 @@
 import './AuthMainPopup.sass';
 
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 
 import Popup from "@components/library/UI/Popup";
 import { useTranslation } from "@helpers/translate";

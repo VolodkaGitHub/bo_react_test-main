@@ -176,28 +176,8 @@ const Unauthorized = () => {
                 ? { onClick: () => handleLoginToggle(true) }
                 : { to: "/auth/login" })}
             >
-              {__("login.button.title")}
+              {__("auth.log_in")}
             </Button>
-          </li>
-          <li className="header__nav-item">
-            <Button
-              type={!isAuthRoute ? "button" : "link"}
-              className="header__signUp header__btn"
-              color="orange"
-              size="mini"
-              {...(!isAuthRoute
-                ? { onClick: () => handleSignUpToggle(true) }
-                : { to: "/auth/signup" })}
-            >
-              {__("auth.sign_up")}
-            </Button>
-          </li>
-          <li className="header__nav-item">
-            <img
-              src={BurgerButton}
-              className="header__burger-btn"
-              onClick={() => setAuthPopupOpen(true)}
-            />
           </li>
         </ul>
       </nav>
@@ -208,7 +188,19 @@ const Unauthorized = () => {
         handleLoginToggle={handleLoginToggle}
         isAuthRoute={isAuthRoute}
       />
+      <Button
+        type={!isAuthRoute ? "button" : "link"}
+        className="header__signUp header__btn"
+        color="orange"
+        size="mini"
+        {...(!isAuthRoute
+          ? { onClick: () => handleSignUpToggle(true) }
+          : { to: "/auth/signup" })}
+      >
+        👤︎
+      </Button>
     </div>
+    
   );
 };
 

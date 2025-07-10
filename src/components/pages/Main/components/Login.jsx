@@ -105,6 +105,7 @@ const Login = () => {
         onChange={formChange}
         className="auth-form"
       >
+        <h1 className="auth-heading">{__("auth.log_in_form_title")}</h1>
         <Input
           className={"auth.js-form__inp-wrap"}
           data={{
@@ -204,7 +205,7 @@ const Login = () => {
           {__("auth.log_in")}
         </Button>
         <div class="divider">
-          <span>or</span>
+          <span>{__("auth.divider")}</span>
         </div>
         <Button color="dark-grey" size="middle" isLoading={loading}>
           <img src={GoogleIcon} alt="" />
