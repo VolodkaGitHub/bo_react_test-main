@@ -62,9 +62,10 @@
 
     &__login.header__btn
         padding: rems(8.5) rems(8)
-        display: block
+        display: none
 
         @include media-breakpoint-up(sm)
+            display: block
             padding: rems(8.5) rems(16)
             
     
@@ -72,19 +73,16 @@
             @include fontSize(16,22)
 
     &__signUp.header__btn
-        padding: rems(8) rems(8)
-        height: 50px
-        width: 50px
-        border-radius: 100%
-        display: flex
-        position: fixed
-        justify-content: center
-        align-items: center
-        bottom: 10px
-        right: 10px
-        z-index: 1000
-        padding-top: 10px
-        font-size: 2.3rem
+        padding: rems(8.5) rems(8)
+        display: none
+
+        @include media-breakpoint-up(sm)
+            display: block
+            padding: rems(8.5) rems(16)
+            
+    
+        @include media-breakpoint-up(lg)
+            @include fontSize(16,22)
 
     &__mini-btn
         padding: rems(11)

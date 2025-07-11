@@ -34,7 +34,7 @@ const AuthMainPopup = ({
           ? { onClick: () => handleLoginToggle(true) }
           : { to: "/auth/login" })}
       >
-        {__("login.button.title")}
+        {__("auth.log_in")}
       </Button>
       <Button
         type={!isAuthRoute ? "button" : "link"}

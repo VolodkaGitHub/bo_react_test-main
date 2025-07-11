@@ -56,6 +56,30 @@ const Unauthorized = () => {
     dispatch(toggleLoginModal(isOpen));
   };
 
+  function scrollToTopAndOpenPopup() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  
+    const waitUntilScrolledToTop = () => {
+      if (window.scrollY === 0) {
+        setAuthPopupOpen(true);
+      } else {
+        requestAnimationFrame(waitUntilScrolledToTop);
+      }
+    };
+  
+    waitUntilScrolledToTop();
+  }
+
+  useEffect (() => {
+
+    const handleScrolling = () => {
+      setAuthPopupOpen(false);
+    }
+    window.addEventListener("scroll", handleScrolling);
+
+    return () => window.removeEventListener("scroll", handleScrolling);
+  });
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 428 && isAuthPopupOpen) {
@@ -179,6 +203,26 @@ const Unauthorized = () => {
               {__("auth.log_in")}
             </Button>
           </li>
+          <li className="header__nav-item">
+            <Button
+              type={!isAuthRoute ? "button" : "link"}
+              className="header__signUp header__btn"
+              color="orange"
+              size="mini"
+              {...(!isAuthRoute
+                ? { onClick: () => handleSignUpToggle(true) }
+                : { to: "/auth/signup" })}
+            >
+              {__("auth.sign_up")}
+            </Button>
+          </li>
+          <li className="header__nav-item">
+            <img
+              src={BurgerButton}
+              className="header__burger-btn"
+              onClick={() => {scrollToTopAndOpenPopup()}}
+            />
+          </li>
         </ul>
       </nav>
       <AuthMainPopup
@@ -188,19 +232,7 @@ const Unauthorized = () => {
         handleLoginToggle={handleLoginToggle}
         isAuthRoute={isAuthRoute}
       />
-      <Button
-        type={!isAuthRoute ? "button" : "link"}
-        className="header__signUp header__btn"
-        color="orange"
-        size="mini"
-        {...(!isAuthRoute
-          ? { onClick: () => handleSignUpToggle(true) }
-          : { to: "/auth/signup" })}
-      >
-        👤︎
-      </Button>
     </div>
-    
   );
 };
 
