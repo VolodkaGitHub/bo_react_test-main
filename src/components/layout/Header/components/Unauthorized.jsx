@@ -56,12 +56,17 @@ const Unauthorized = () => {
     dispatch(toggleLoginModal(isOpen));
   };
 
-  function scrollToTopAndOpenPopup() {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  function scrollToTopAndTogglePopup() {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth"});
   
     const waitUntilScrolledToTop = () => {
       if (window.scrollY === 0) {
-        setAuthPopupOpen(true);
+        if(isAuthPopupOpen){
+          setAuthPopupOpen(false);
+        }
+        else {
+          setAuthPopupOpen(true);
+        }
       } else {
         requestAnimationFrame(waitUntilScrolledToTop);
       }
@@ -220,7 +225,7 @@ const Unauthorized = () => {
             <img
               src={BurgerButton}
               className="header__burger-btn"
-              onClick={() => {scrollToTopAndOpenPopup()}}
+              onClick={() => {scrollToTopAndTogglePopup()}}
             />
           </li>
         </ul>
