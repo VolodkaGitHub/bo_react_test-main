@@ -208,35 +208,8 @@ const Unauthorized = () => {
               {__("auth.log_in")}
             </Button>
           </li>
-          <li className="header__nav-item">
-            <Button
-              type={!isAuthRoute ? "button" : "link"}
-              className="header__signUp header__btn"
-              color="orange"
-              size="mini"
-              {...(!isAuthRoute
-                ? { onClick: () => handleSignUpToggle(true) }
-                : { to: "/auth/signup" })}
-            >
-              {__("auth.sign_up")}
-            </Button>
-          </li>
-          <li className="header__nav-item">
-            <img
-              src={BurgerButton}
-              className="header__burger-btn"
-              onClick={() => {scrollToTopAndTogglePopup()}}
-            />
-          </li>
         </ul>
       </nav>
-      <AuthMainPopup
-        active={isAuthPopupOpen}
-        setActive={setAuthPopupOpen}
-        handleSignUpToggle={handleSignUpToggle}
-        handleLoginToggle={handleLoginToggle}
-        isAuthRoute={isAuthRoute}
-      />
     </div>
   );
 };
