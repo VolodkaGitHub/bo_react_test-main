@@ -5,6 +5,7 @@ export const auth = {
     "auth.sign_up": "РЕЄСТРАЦІЯ",
     "auth.create_password": "Створіть новий пароль",
     "auth.create_with_google": "Створити через Google",
+    "auth.login_with_google": "Увійти через Google",
     "auth.create_password_text": "Будь ласка, оберіть новий пароль для акаунта",
     "auth.new_password": "Новий пароль",
     "auth.confirm_password": "Підтвердіть пароль",
@@ -52,6 +53,7 @@ export const auth = {
     "auth.sign_up": "SIGN UP",
     "auth.create_password": "Create a new password",
     "auth.create_with_google": "Create with Google",
+    "auth.login_with_google": "Log in with Google",
     "auth.create_password_text": "Please choose a new account password",
     "auth.new_password": "New password",
     "auth.confirm_password": "Confirm password",
@@ -101,6 +103,7 @@ export const auth = {
     "auth.sign_up": "РЕГИСТРАЦИЯ",
     "auth.create_password": "Укажите пароль",
     "auth.create_with_google": "Создать через Google",
+    "auth.login_with_google": "Войти через Google",
     "auth.create_password_text":
       "Пожалуйста, выберите новый пароль учетной записи",
     "auth.new_password": "Новый пароль",

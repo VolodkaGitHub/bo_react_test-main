@@ -209,7 +209,7 @@ const Login = () => {
         </div>
         <Button color="dark-grey" size="middle" isLoading={loading}>
           <img src={GoogleIcon} alt="" />
-          {__("auth.create_with_google")}
+          {__("auth.login_with_google")}
         </Button>
         <div className="change-option__container">
           <p className="change-option__text">{__("auth.ask_sign_up")}

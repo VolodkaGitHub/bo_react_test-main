@@ -22,6 +22,10 @@ import { useLocation } from "react-router-dom";
 import AuthMainPopup from "@components/library/popups/AuthMainPopup/AuthMainPopup";
 import { useSelector } from "react-redux";
 
+import UkrainianFlag from 'src/assets/images/countries/ukraine.png';
+import RussianFlag from 'src/assets/images/countries/russia.png';
+import AmericanFlag from 'src/assets/images/countries/united-states.png'
+
 const Unauthorized = () => {
   const [anchorEl, setAnchorEl] = useState(false);
   const [isAuthPopupOpen, setAuthPopupOpen] = useState(false);
@@ -123,6 +127,7 @@ const Unauthorized = () => {
                 {config.supported_locales.includes("en") && (
                   <MenuItem data-my-value="en" onClick={handleChange}>
                     <div className="header__change-btn">
+                    <img src={AmericanFlag} alt="AM Flag" className="header__flag-icon" />
                       <p
                         className={`header__change-btn-text ${
                           currentLocale === "en"
@@ -141,6 +146,7 @@ const Unauthorized = () => {
                 {config.supported_locales.includes("uk") && (
                   <MenuItem data-my-value="uk" onClick={handleChange}>
                     <div className="header__change-btn">
+                    <img src={UkrainianFlag} alt="UK Flag" className="header__flag-icon" />
                       <p
                         className={`header__change-btn-text ${
                           currentLocale === "uk"
@@ -159,6 +165,7 @@ const Unauthorized = () => {
                 {config.supported_locales.includes("ru") && (
                   <MenuItem data-my-value="ru" onClick={handleChange}>
                     <div className="header__change-btn">
+                    <img src={RussianFlag} alt="AM Flag" className="header__flag-icon" />
                       <p
                         className={`header__change-btn-text ${
                           currentLocale === "ru"
