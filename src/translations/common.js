@@ -4,7 +4,7 @@ const create = {
 
     "common.enter_password": "Введіть пароль",
     "common.password": "Пароль",
-    "common.email": "Електронна пошта",
+    "common.email": "Ел. пошта",
     "common.enter_email": "Введіть електронну пошту",
     "common.enter_code": "Введіть код",
   },
