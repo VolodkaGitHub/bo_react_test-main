@@ -30,11 +30,16 @@
 
 .hero
 	position: relative
-	background-color: #F7F7F8
+	background: radial-gradient(circle at 90% 110%,#ff9966 0%,#ff9966 6%,#ffffff 25%)
 	z-index: 1
 	overflow: hidden
 	border-bottom-left-radius: 12px
 	border-bottom-right-radius: 12px
+
+	&__first-section-wrapper
+		max-width: 1560px
+		margin: 0 auto
+		position: relative
 
 	&__wrapper
 		display: flex
@@ -141,12 +146,18 @@
 			margin-bottom: rems(40)
 		margin-bottom: rems(20)
 	
+
 	
 .condition
 	position: relative
 	background-color: rgba(28, 28, 33, 1)
 	z-index: 0
 	padding-bottom: rems(80)
+
+	&__wrapper
+		max-width: 1560px
+		margin: 0 auto
+		position: relative
 
 	.wrapper
 		padding-top: rems(80)
@@ -479,6 +490,11 @@
 
 	@include media-breakpoint-up(md)
 		padding-bottom: rems(140)
+
+	&__wrapper
+		position: relative
+		margin:0 auto
+		max-width: 1560px
 
 	&__bg-logo
 		position: absolute
