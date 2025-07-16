@@ -205,6 +205,19 @@ const Unauthorized = () => {
           <li className="header__nav-item">
             <Button
               type={!isAuthRoute ? "button" : "link"}
+              className="header__signUp header__btn"
+              color="orange"
+              size="mini"
+              {...(!isAuthRoute
+                ? { onClick: () => handleSignUpToggle(true) }
+                : { to: "/auth/register" })}
+            >
+              {__("auth.sign_up")}
+            </Button>
+          </li>
+          <li className="header__nav-item">
+            <Button
+              type={!isAuthRoute ? "button" : "link"}
               className="header__login header__btn"
               color="grey-light"
               size="mini"
