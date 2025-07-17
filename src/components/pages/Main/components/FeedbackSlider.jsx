@@ -7,15 +7,16 @@ import SliderButtons from "./SliderButtons";
 import { useTranslation } from "@helpers/translate";
 import User from "@assets/images/icons/user.svg";
 
-const feedbacks = Array(5).fill({
-  text: "Binify is the most user-friendly platform I’ve used. Fast deposits and support that actually replies. Feels like it’s built for real traders.",
-  userName: "John Smith",
-  userExperience: "3 years of experience",
-  userImage: User,
-});
-
 const FeedbackSlider = () => {
+
   const { __ } = useTranslation();
+
+  const feedbacks = Array(5).fill({
+    text: __("main.text"),
+    userName: __("main.name"),
+    userExperience: __("main.experience"),
+    userImage: User,
+  });
 
   return (
     <div className="slider-container">

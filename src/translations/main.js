@@ -22,11 +22,17 @@ export const main = {
     "main.feature-card.i-2": "Допомога за лічені секунди",
     "main.feature-card.i-2.text.i-1":
       "Швидка підтримка в реальному часі, коли вона вам потрібна",
+    "main.feature-card.i-2.text.i-2":
+      "Деякий текст про функції у веб-застосунку",
+    "main.feature-card.i-2.text.i-3":
+      "Деякий текст про функції у веб-застосунку",
     "main.feature-card.i-3": "Освітні інструменти для покращення навичок",
     "main.feature-card.i-3.text.i-1":
       "Опановуйте ф'ючерси та бінарні опціони з легкістю",
     "main.feature-card.i-3.text.i-2":
       "Використовуйте платформу для практики нових знань",
+    "main.feature-card.i-3.text.i-3":
+      "Деякий текст про функції у веб-застосунку",
     "main.action.text": "Час торгувати з впевненістю",
 
     "main.reviews-registration-section.title.i-1": "Що кажуть наші користувачі",
@@ -64,6 +70,9 @@ export const main = {
     "main.footer.t1": "Усі права захищено.",
     "main.footer.t2": "Загальна інформація",
     "main.footer.t3": "Технічна підтримка",
+    "main.text": "Binify є найзручнішою платформою, яку я коли-небудь використовував. Швидкі депозити та підтримка, яка насправді відповідає. Відчувається, що вона створена для справжніх трейдерів.",
+    "main.name": "Джон Сміт",
+    "main.experience": "3 роки досвіду"
   },
   en: {
     "main.hero.title": "Built for traders who value  confidence",
@@ -87,11 +96,17 @@ export const main = {
     "main.feature-card.i-2": "Get help in seconds not hours",
     "main.feature-card.i-2.text.i-1":
       "Fast, real-time support whenever you need it",
+    "main.feature-card.i-2.text.i-2":
+      "Some text about features in web app",
+    "main.feature-card.i-2.text.i-3":
+      "Some text about features in web app",
     "main.feature-card.i-3": "Educational tools to boost your skills",
     "main.feature-card.i-3.text.i-1":
       "Master futures and binary options with ease",
     "main.feature-card.i-3.text.i-2":
       "Use our platform to put your new knowledge into practice",
+    "main.feature-card.i-3.text.i-3":
+      "Some text about features in web app",
     "main.action.text": "It’s time to trade with confidence",
 
     "main.reviews-registration-section.title.i-1": "What our users saying  ",
@@ -152,6 +167,9 @@ export const main = {
     "main.footer.t1": "All Rights Reserved.",
     "main.footer.t2": "General information",
     "main.footer.t3": "Technical support",
+    "main.text": "Binify is the most convenient platform I've ever used. Fast deposits and support that actually responds. It feels like it was built for real traders.",
+    "main.name": "John Smith",
+    "main.experience": "3 years of experience"
   },
 
   ru: {
@@ -175,11 +193,17 @@ export const main = {
     "main.feature-card.i-2": "Получай помощь за секунды, а не часы",
     "main.feature-card.i-2.text.i-1":
       "Быстрая поддержка в режиме реального времени, именно тогда когда тебе нужна",
+    "main.feature-card.i-2.text.i-2":
+      "Некоторый текст о функциональных возможностях в веб-приложении",
+    "main.feature-card.i-2.text.i-3":
+      "Некоторый текст о функциональных возможностях в веб-приложении",
     "main.feature-card.i-3": "Учебные материалы для развития твоих навыков",
     "main.feature-card.i-3.text.i-1":
       "С легкостью осваивайте фьючерсы и бинарные опционы",
     "main.feature-card.i-3.text.i-2":
       "Используйте нашу платформу, чтобы применить свои новые знания на практике",
+    "main.feature-card.i-3.text.i-3":
+      "Некоторый текст о функциональных возможностях в веб-приложении",
     "main.action.text": "Пора торговать с уверенностью",
     "main.conditions.button": "Начать сейчас",
 
@@ -242,6 +266,9 @@ export const main = {
     "main.footer.t1": "Все права защищены.",
     "main.footer.t2": "Общая информация",
     "main.footer.t3": "Техническая поддержка",
+    "main.text": "Binify — самая удобная платформа, которую я когда-либо использовал. Быстрые депозиты и поддержка, которая действительно отвечает. Чувствуется, что она создана для настоящих трейдеров.",
+    "main.name": "Джон Смит",
+    "main.experience": "3 года опыта"
   },
 
   es: {

@@ -180,10 +180,10 @@ export const Main = () => {
                     {__("main.feature-card.i-2.text.i-1")}
                   </p>
                   <p className="feature-card__text">
-                    Some text about features in web app
+                    {__("main.feature-card.i-2.text.i-2")}
                   </p>
                   <p className="feature-card__text">
-                    Some text about features in web app
+                    {__("main.feature-card.i-2.text.i-3")}
                   </p>
                 </div>
                 <div className="feature-card__shedule-container">
@@ -208,7 +208,7 @@ export const Main = () => {
                     {__("main.feature-card.i-3.text.i-2")}
                   </p>
                   <p className="feature-card__text">
-                    Some text about features in web app
+                    {__("main.feature-card.i-3.text.i-3")}
                   </p>
                 </div>
                 <div className="feature-card__shedule-container">
