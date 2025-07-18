@@ -39,8 +39,11 @@
 		width: 30px
 		height: 30px
 		display: flex
-		justify-content: center
-		align-items: center
+		justify-content: end
+		align-items: end
+		@include media-breakpoint-up(sm)
+			justify-content: center
+			align-items: center
 
 .auth-container
 	margin-top: -6px

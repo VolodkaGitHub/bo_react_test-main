@@ -641,13 +641,16 @@
 
     &__header
         display: flex
-        max-width: rems(404)
+        max-width: rems(368)
         width: 100%
         justify-content: space-between
         align-items: center
+        margin-bottom: 10px
         
         @include media-breakpoint-up(sm)
                 justify-content: flex-end
+                margin-bottom: 0
+                max-width: rems(398)
     &__overlay
         position: absolute
         top: 0
